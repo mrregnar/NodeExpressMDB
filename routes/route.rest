@@ -1,0 +1,31 @@
+GET http://localhost:3000/foodsharers
+
+###
+GET http://localhost:3000/foodsharers/609a6d506763a364ec39b74d
+
+###
+POST http://localhost:3000/foodsharers
+Content-Type: application/json
+
+{
+    "foodsharerName": "UserName111",
+    "password": "marc123",
+    "phoneNumber": "403555555",
+    "communityName": "Green Belt"
+}
+
+###
+DELETE  http://localhost:3000/foodsharers/609a6b9bc3161b371c6bb70f
+
+###
+PATCH http://localhost:3000/foodsharers/609a6d506763a364ec39b74d
+Content-Type: application/json
+
+{
+    "foodsharerName": "Not My Name",
+    "password": "whatever",
+    "phoneNumber": "5667555555",
+    "communityName": "New Haven"
+}
+
+
